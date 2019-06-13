@@ -53,3 +53,4 @@ Best model achieved a validation accuracy of 76.4% after 5 epochs of training.
 4. Should train for more number of epochs and on a bigger subset of the data. 
 5. Should try finding ways to screen out combinations better/more efficiently to make the dataset more balanced. 
 6. Image augmentation hampers the training. 
+7. Similarity metric is based on the sigmoid activation value found in the last layer. Instead, similarity metrics used in image processing can be used like SSIM, earth movers distance, etc. 
