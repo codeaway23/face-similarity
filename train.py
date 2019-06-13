@@ -34,11 +34,11 @@ print(model.summary())
 #compile and train model
 model.compile(loss='binary_crossentropy', optimizer='Adam', metrics=['accuracy'])
 hist = model.fit_generator(inp_gen,
-		                   epochs = nb_epochs,
-		                   steps_per_epoch=train_num/batch,
-		                   validation_data = test_gen,
-		                   validation_steps=test_num/batch,
-		                   shuffle=False)
+		           epochs = nb_epochs,
+		           steps_per_epoch=train_num/batch,
+		           validation_data = test_gen,
+		           validation_steps=test_num/batch,
+		           shuffle=False)
 
 #get validation accuracy
 print("validation accuracy:", hist.history['val_acc'][-1])
