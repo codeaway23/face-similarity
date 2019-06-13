@@ -120,9 +120,9 @@ def build_model(inp_shape):
 def multi_input_generator(df, generator, batch_size, img_height, img_width):
 
     genX1 = generator.flow_from_dataframe(dataframe=df,
-    									  directory=None,
-    									  x_col='image1',
-    									  y_col='labels',
+  					  directory=None,
+    					  x_col='image1',
+    					  y_col='labels',
                                           target_size = (img_height,img_width),
                                           class_mode = 'binary',
                                           classes = ['yes', 'no'],
@@ -130,9 +130,9 @@ def multi_input_generator(df, generator, batch_size, img_height, img_width):
                                           shuffle=False)
     
     genX2 = generator.flow_from_dataframe(dataframe=df,
-    									  directory=None,
-    									  x_col='image2',
-    									  y_col='labels',
+    					  directory=None,
+    					  x_col='image2',
+    					  y_col='labels',
                                           target_size = (img_height,img_width),
                                           class_mode = 'binary',
                                           classes = ['yes', 'no'],
