@@ -50,8 +50,8 @@ def prepare_data(true_pairs, false_pairs, train_num, test_num):
 	def get_dataframe(img1, img2, labels):
 
 		df = pd.DataFrame({'image1': img1,
-						  'image2': img2,
-						  'labels': labels})
+				   'image2': img2,
+				   'labels': labels})
 
 		return df
 
