@@ -1,8 +1,6 @@
-## Machine Learning Task for Nanonets 
-
 ## Problem
 
-The problem statement can be found [here](https://gist.github.com/prats226/d3da93412fef04e3b55b85fed56839e5)
+Find out if two images are of the same person or not. The model is trained on [this](http://vis-www.cs.umass.edu/lfw/) dataset. 
 
 ## Usage
 
@@ -35,13 +33,12 @@ I couldn't upload the data or my trained model file due to size limits.
 
 ## Results
 
-For the following parameters (which are very small numbers but all my PC could handle...)-  
+For the following parameters -  
 1. nb_epochs = 1
 2. train_image_pairs = 4000
 3. test_image_pairs = 500
 
 Best validation accuracy achieved - 72%
-Worst validation accuracy achieved - 50%
 
 Best model achieved a validation accuracy of 76.4% after 5 epochs of training.
 
